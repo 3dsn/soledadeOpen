@@ -1,0 +1,44 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  background-color: #ddd;
+}
+
+.dataCard {
+  background-color: #efefef;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1em;
+}
+
+.lineChartCardCard {
+  position: relative;
+  width: 90%;
+  height: 20rem;
+}
+
+.barChartCard {
+  position: relative;
+  width: 50%;
+  height: 16rem;
+}
+
+.comboCard {
+  position: relative;
+  width: 38%;
+  height: 16rem;
+}
+
+.tab {
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}

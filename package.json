@@ -1,0 +1,33 @@
+{
+  "name": "soledadeOpen",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://3dsn.github.io/soledadeOpen",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "npm run dev",
+    "build": "vite build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "vite",
+    "preview": "vite preview --port 8080"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.2",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-select": "^5.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.0"
+  }
+}
