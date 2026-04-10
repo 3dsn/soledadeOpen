@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState } from 'react';
 import Select from 'react-select';
 
@@ -92,22 +92,21 @@ export const App = () => {
   return (
     <div className="App">
 
-      {/* 🔥 NOVO: SELETOR DE ANO */}
-      <div style={{ marginBottom: "10px" }}>
-        <label>Ano: </label>
-        <select
-          value={anoSelecionado}
-          onChange={(e) => setAnoSelecionado(Number(e.target.value))}
-        >
-          {Object.keys(dadosPorAno).map((ano) => (
-            <option key={ano} value={ano}>
-              {ano}
-            </option>
-          ))}
-        </select>
-      </div>
-
       <div className="dataCard lineChartCardCard">
+        {/* 🔥 NOVO: SELETOR DE ANO */}
+        <div style={{ marginBottom: "10px" }}>
+          <label>Selecione o Ano: </label>
+          <select
+            value={anoSelecionado}
+            onChange={(e) => setAnoSelecionado(Number(e.target.value))}
+          >
+            {Object.keys(dadosPorAno).map((ano) => (
+              <option key={ano} value={ano}>
+                {ano}
+              </option>
+            ))}
+          </select>
+        </div>
         <Line
           data={{
             labels: mesesDoAno,
@@ -140,6 +139,7 @@ export const App = () => {
       <div className="dataCard comboCard">
 
         {/* seletor de setor original */}
+        <label>Setor: </label>
         <Select
           defaultValue={{ label: 'ADMINISTRAÇÃO', value: '04 - ADMINISTRAÇÃO' }}
           onChange={setSelectedOption}
